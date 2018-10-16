@@ -6,14 +6,12 @@ class Post < ActiveRecord::Base
   def initialize(name:, content:)
     @name = name
     @content = content
-
-    POSTS << self
   end
 
   def self.create(name, content)
     post = self.new(name, content)
 
-    POSTS << self
+    POSTS << post
 
   end
 end

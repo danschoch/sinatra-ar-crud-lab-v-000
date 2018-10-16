@@ -12,6 +12,5 @@ class Post < ActiveRecord::Base
     post = self.new(name, content)
 
     POSTS << post
-
   end
 end

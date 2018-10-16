@@ -13,5 +13,7 @@ class Post < ActiveRecord::Base
   def self.create(name, content)
     post = self.new(name, content)
 
+    POSTS << self
+
   end
 end

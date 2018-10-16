@@ -9,4 +9,9 @@ class Post < ActiveRecord::Base
 
     POSTS << self
   end
+
+  def self.create(name, content)
+    post = self.new(name, content)
+
+  end
 end

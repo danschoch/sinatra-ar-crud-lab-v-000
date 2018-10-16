@@ -1,16 +1,16 @@
 class Post < ActiveRecord::Base
-  attr_accessor :name, :content
+  #attr_accessor :name, :content
 
-  POSTS = []
+  #POSTS = []
 
-  def initialize(name:, content:)
-    @name = name
-    @content = content
-  end
+  #def initialize(name:, content:)
+    #@name = name
+    #@content = content
+  #end
 
-  def self.create(name, content)
-    post = self.new(name, content)
+  #def self.create(name, content)
+    #post = self.new(name, content)
 
-    POSTS << post
-  end
+    #POSTS << post
+  #end
 end
